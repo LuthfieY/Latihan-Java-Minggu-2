@@ -5,12 +5,14 @@ public class Soal1 {
 	public static void main(String[] args) {
 		System.out.println("Nilai var CM_PER_INCH pada class Soal2v2: " + Soal2v2.CM_PER_INCH);
 		
+		//Dapatkan input user
 		Scanner input = new Scanner(System.in);
 		System.out.print("Masukan angka: ");
 		
 		var angka = input.nextDouble();
 		input.close();
 		
+		//Check jika angka terdapat di dalam range
 		if(angka < Long.MIN_VALUE || angka > Long.MAX_VALUE) {
 			System.out.println(angka + " cannot be fitted anywhere");
 		}else {	
